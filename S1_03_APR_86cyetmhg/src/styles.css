@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8e8e8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* .home-container {
+  background-image: url("https://source.unsplash.com/1600x900/?food,cooking");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+} */
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Categories Grid */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Category Cards */
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5a9a9;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.category-card h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Upload Button */
+.upload-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;  /* Removes underline */
+}
+
+.upload-button:hover {
+  background-color: #ff4f4f;
+}
+
+/* Ensure the Link wrapper does not have default styles */
+a {
+  text-decoration: none;
+}
+
+
+
+/* Recipe Form Container */
+.recipe-form-container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Form */
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recipe-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.recipe-form input,
+.recipe-form select,
+.recipe-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.recipe-form textarea {
+  height: 100px;
+}
+
+/* Submit Button */
+.button {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #e68900;
+}
+
+/* Recipe List */
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.recipe-card {
+  width: 200px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Category Buttons */
+.category-button {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-button:hover {
+  background-color: #388e3c;
+  color: white;
+}
